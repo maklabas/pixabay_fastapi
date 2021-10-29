@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP</title>
+</head>
+<body>
+<h3>Category {{category}}</h3>
+{% for hit in hits %}
+
+<p><img src="{{hit.previewURL}}"  alt="kartinka"></p>
+<p>Likes: {{hit.likes}} Comments: {{hit.comments}}</p>
+
+{% endfor %}
+</body>
+</html>

@@ -5,12 +5,12 @@
     <title>APP</title>
 </head>
 <body>
-<h3>Category {{category}}</h3>
+<center><h1>Category {{category}}</h1></center>
 {% for hit in hits %}
-
-<p><img src="{{hit.previewURL}}"  alt="kartinka"></p>
-<p>Likes: {{hit.likes}} Comments: {{hit.comments}}</p>
-
+<center>
+    <p><img src="{{hit.largeImageURL}}" alt="kartinka"></p>
+    <p>Likes: {{hit.likes}} Comments: {{hit.comments}}</p>
+</center>
 {% endfor %}
 </body>
 </html>

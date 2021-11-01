@@ -2,11 +2,6 @@ import os
 import requests
 
 
-
-comments = None
-likes = None
-
-
 def connect_pixabay(per_page: int, category: str):
     secret_key = os.environ.get("pixabay_key")
     url = f"https://pixabay.com/api/?key={secret_key}&category={category}&per_page={per_page}&image_type=photo"
